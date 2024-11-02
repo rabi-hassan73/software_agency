@@ -183,10 +183,11 @@ export default function Home() {
             <Link
               href="/meeting"
               className="py-4 
+              md:py-3
             px-10
             md:px-16
       md:text-xl
-      text-sm
+      text-xs
       hover:bg-[#abcbff] 
       rounded-[6px]
       border-2 
@@ -420,9 +421,9 @@ export default function Home() {
               alt="image"
             />{" "}
           </h1>
-          <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
+          <p className="text-left  text-xl  text-gray-500">+92 3131289017</p>
           <p className="text-left  text-xl  text-gray-500">
-            admin@birdsoftware.ca
+            rabihasanshaikh3@gmail.com
           </p>
         </div>
 
