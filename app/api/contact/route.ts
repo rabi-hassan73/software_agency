@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
   const mailOptions = {
     from: process.env.EMAIL_USER, // Use the authenticated user's email here
     to: process.env.EMAIL_TO,
-    cc: ["hassanahmedshaikh9@gmail.com", "rabihasanshaikh3@gmail.com"],
+    cc: ["hassanahmedshaikh9@gmail.com", "fazeelkarachi01@gmail.com"],
     subject: `Contact Form: ${subject}`,
     text: `From: ${name}\n\nEmail: <${email}> \n\nSubject: ${subject} \n\nMessage: \n\n${message}`,
   };
