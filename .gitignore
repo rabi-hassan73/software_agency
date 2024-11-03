@@ -16,8 +16,6 @@
 # production
 /build
 
-# meeting
-/meeting
 
 # misc
 .DS_Store
@@ -30,6 +28,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env.local
 
 # vercel
 .vercel

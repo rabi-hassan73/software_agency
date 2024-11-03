@@ -112,7 +112,6 @@ export default function Home() {
           name="keywords" 
           content="web design, SEO, cloud services, microservices, modern applications" 
         />
-        {/* <link rel="canonical" href="https://yourwebsite.com" /> */}
       </Head>
 
       <div className="overflow-clip inset-0 -z-10 h-full w-full bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
@@ -147,16 +146,16 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-x-4">
             <a href="tel:0313-22222" className="hidden lg:flex">
-              <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
+              {/* <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
                 (0313)-22-222
-              </button>
+              </button> */}
             </a>
             <Link 
-              href={"/meeting"}
+              href={"/contact"}
               className="md:px-6 md:py-3 px-3 py-2 text-lg hover:bg-[#abcbff] rounded-[6px] border-2 border-black text-white bg-[#121212] transition duration-200
               hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
             >
-              Book a call
+              Contact
             </Link>
           </div>
         </Element>
@@ -373,7 +372,7 @@ export default function Home() {
         <section>
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
           <Image
-            src={"/logo/logo.webp"}
+            src={"/logo/review.jpg"}
             width={10000}
             height={10000}
             className=" md:w-1/3 rounded-md"
@@ -381,7 +380,7 @@ export default function Home() {
           />
           <div className="flex flex-col gap-y-5 md:w-1/2">
             <h1 className="text-lg md:text-2xl ">
-              &quot;We&apos;ve been working with Bird for over 2 years and
+              &quot;We&apos;ve been working with CLoud Tech for over 2 years and
               they&apos;ve been amazing to work with. They&apos;ve helped us
               grow our business and we couldn&apos;t be happier with the
               results. &quot;

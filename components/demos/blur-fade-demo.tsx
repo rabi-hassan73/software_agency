@@ -14,20 +14,20 @@ const works = [
   },
   {
     background: "bg-gray-200",
-    imageUrl: "/images/business.webp",
-    title: "Atlas Massage",
-    link: "https://www.atlasmassage.ca",
+    imageUrl: "/images/todo-list.jpg",
+    title: "Todo List",
+    link: "https://colinwren.medium.com/trying-to-find-the-perfect-todo-list-app-ccbe0ca46070",
   },
   {
     background: "bg-gray-200",
-    imageUrl: "/images/business.webp",
-    title: "Canadian Security Solutions",
-    link: "https://www.canadiansecuritysolutions.com",
+    imageUrl: "/images/American-terminate.jpg",
+    title: "American Termite & Pest Services",
+    link: "https://americanservicesfl.com/",
   },
   {
     background: "bg-gray-200",
-    imageUrl: "/images/business.webp",
-    title: "Flight 9",
+    imageUrl: "/images/Gas-station.jpg",
+    title: "Gas Stations in US of America",
     link: "https://www.flight9.art",
   },
 
@@ -52,7 +52,6 @@ export function BlurFadeDemo() {
                 className="
                 h-5/6 w-full object-cover rounded-lg"
         
-              
        
                 src={imageUrl}
                 alt={`Random stock image ${idx + 1}`}
