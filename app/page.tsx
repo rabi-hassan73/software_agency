@@ -422,7 +422,8 @@ export default function Home() {
           </h1>
           <p className="text-left  text-xl  text-gray-500">+92 3131289017</p>
           <p className="text-left  text-xl  text-gray-500">
-            rabihasanshaikh3@gmail.com
+            rabihasanshaikh3@gmail.com <br/>
+            fazeelkarachi01@gmail.com
           </p>
         </div>
 
