@@ -104,10 +104,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Bird | Home</title>
+        <title>CloudTech | Home</title>
         <meta 
           name="description" 
-          content="Welcome to Bird, your design & development studio. We specialize in creating modern applications and providing cloud services." 
+          content="Welcome to CloudTech, your design & development studio. We specialize in creating modern applications and providing cloud services." 
         />
         <meta 
           name="keywords" 
