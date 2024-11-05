@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from '@/components/footer';
 import ShowcaseNavbar from '@/components/showcase-navbar';
 import { useState } from 'react';
 
@@ -100,6 +101,7 @@ export default function ContactPage() {
       </div>
     </div>
     </div>
+    
   );
   
 }
