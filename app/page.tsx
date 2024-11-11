@@ -107,11 +107,11 @@ export default function Home() {
         <title>CloudTech | Home</title>
         <meta 
           name="description" 
-          content="Welcome to CloudTech, your design & development studio. We specialize in creating modern applications and providing cloud services." 
+          content="Welcome to nexacloud, your design & development studio. We specialize in creating modern applications and providing cloud services." 
         />
         <meta 
           name="keywords" 
-          content="web design, SEO, cloud services, microservices, modern applications" 
+          content="web design, SEO, cloud services, microservices, modern applications, nexacloud, nextcloud" 
         />
       </Head>
 
