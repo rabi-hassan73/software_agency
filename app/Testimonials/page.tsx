@@ -119,10 +119,12 @@ const Testimonials: React.FC = () => {
             return (
               <li key={t.id} className="p-4 bg-gray-100 rounded-lg flex items-start">
                 <Image
-                  src={gravatarUrl}
-                  alt={`${t.name}'s profile`}
-                  className="w-12 h-12 rounded-full mr-4"
-                />
+                src={gravatarUrl}
+                alt={`${t.name}'s profile`}
+                width={50} // Set the width
+                height={50} // Set the height
+                className="rounded-full mr-4"
+              />
                 <div className="flex-1">
                   <div className="flex justify-between items-center">
                     <p className="font-semibold text-lg">

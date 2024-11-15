@@ -15,13 +15,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { PiCheckBold } from "react-icons/pi";
 import { Link as ScrollLink, Element } from "react-scroll";
-import { IconStarFilled } from "@tabler/icons-react";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Footer from "@/components/footer";
 import WhyChooseUs from "@/components/whychooseus";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { useState } from "react";
 
 const services = [
   {
@@ -63,6 +64,16 @@ const services = [
 ];
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMobileMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <div>
       <Head>
@@ -71,13 +82,10 @@ export default function Home() {
           name="description"
           content="Welcome to nexacloud, your design & development studio. We specialize in creating modern applications and providing cloud services."
         />
-        <meta
-          name="keywords"
-          content="web design, SEO, cloud services, microservices, modern applications, nexacloud, nextcloud"
-        />
       </Head>
 
-      <div className="overflow-clip inset-0 -z-10 h-full w-full bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+      <div className="overflow-clip inset-0 -z-10 h-full w-full bg-[#fafafa]">
+        {/* Navbar */}
         <Element
           name="top"
           className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 xl:w-5/6 2xl:w-[68%] bg-white flex items-center justify-between py-3 px-4 md:px-4 mx-6"
@@ -91,48 +99,77 @@ export default function Home() {
               className="w-28"
             />
           </Link>
-          <div className="absolute right translate-x-3/4 transform">
-            <div className="hidden md:flex gap-x-5 items-center text-gray-700 font-medium text-sm cursor-pointer">
-              <Link href={"/showcase"} className="hover:text-blue-500">
-                Showcase
-              </Link>
-              <ScrollLink
-                to="services"
-                smooth={true}
-                className="hover:text-blue-500"
-              >
-                Services
-              </ScrollLink>
-              <ScrollLink
-                to="process"
-                smooth={true}
-                className="hover:text-blue-500"
-              >
-                Process
-              </ScrollLink>
-              <ScrollLink
-                to="guarentees"
-                smooth={true}
-                className="hover:text-blue-500"
-              >
-                Guarentees
-              </ScrollLink>
-              <ScrollLink
-                to="WhyChooseUs"
-                smooth={true}
-                className="hover:text-blue-500"
-              >
-                Why Choose Us
-              </ScrollLink>
-              <Link href={"/ourTeam"} className="hover:text-blue-500">
-                Our Team
-              </Link>
-              <Link href={"/Testimonials"} className="hover:text-blue-500">
-                Testimonials
-              </Link>
-            </div>
+
+          {/* Desktop Links */}
+          <div className="hidden md:flex gap-x-5 items-center text-gray-700 font-medium text-sm cursor-pointer">
+            <Link href={"/showcase"} className="hover:text-blue-500">
+              Showcase
+            </Link>
+            <ScrollLink
+              to="services"
+              smooth={true}
+              className="hover:text-blue-500"
+            >
+              Services
+            </ScrollLink>
+            <ScrollLink
+              to="process"
+              smooth={true}
+              className="hover:text-blue-500"
+            >
+              Process
+            </ScrollLink>
+            <ScrollLink
+              to="guarentees"
+              smooth={true}
+              className="hover:text-blue-500"
+            >
+              Guarentees
+            </ScrollLink>
+            <ScrollLink
+              to="WhyChooseUs"
+              smooth={true}
+              className="hover:text-blue-500"
+            >
+              Why Choose Us
+            </ScrollLink>
+            <Link href={"/ourTeam"} className="hover:text-blue-500">
+              Our Team
+            </Link>
+            <Link href={"/Testimonials"} className="hover:text-blue-500">
+              Testimonials
+            </Link>
+          </div>
+
+          {/* Mobile Menu Icon */}
+          <div className="md:hidden">
+            <FaBarsStaggered
+              className="text-gray-700 text-2xl cursor-pointer"
+              onClick={() => setMobileMenuOpen((prev) => !prev)} // Toggle the state
+            />
           </div>
         </Element>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-20 left-0 w-full bg-white shadow-md p-4 z-50">
+            <nav className="flex flex-col space-y-4 text-gray-700 font-medium text-sm">
+              <Link href={"/showcase"} onClick={() => setMobileMenuOpen(false)}>
+                Showcase
+              </Link>
+              
+              <Link href={"/ourTeam"} onClick={() => setMobileMenuOpen(false)}>
+                Our Team
+              </Link>
+              <Link
+                href={"/Testimonials"}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Testimonials
+              </Link>
+            </nav>
+          </div>
+        )}
 
         <main className="md:pb-6">
           <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
@@ -351,7 +388,6 @@ export default function Home() {
 
         <Element name="WhyChooseUs">
           <WhyChooseUs />
-        
         </Element>
 
         <Element name="guarentees">
