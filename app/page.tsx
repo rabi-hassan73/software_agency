@@ -66,25 +66,14 @@ export default function Home() {
   return (
     <div>
       <Head>
-<<<<<<< HEAD
-        <title>NexaCloud | Home</title>
+        <title>CloudTech | Home</title>
         <meta
           name="description"
-          content="Welcome to NexaCloud, your partner in web development, scalable solutions, software, mobile apps, graphic design, and cloud services."
+          content="Welcome to nexacloud, your design & development studio. We specialize in creating modern applications and providing cloud services."
         />
         <meta
           name="keywords"
-          content="web development, scalable websites, software development, mobile applications, graphic design, cloud services, DevOps, CI/CD"
-=======
-        <title>CloudTech | Home</title>
-        <meta 
-          name="description" 
-          content="Welcome to nexacloud, your design & development studio. We specialize in creating modern applications and providing cloud services." 
-        />
-        <meta 
-          name="keywords" 
-          content="web design, SEO, cloud services, microservices, modern applications, nexacloud, nextcloud" 
->>>>>>> 6948ee84158d5ef353ff61bedf6e923be641f636
+          content="web design, SEO, cloud services, microservices, modern applications, nexacloud, nextcloud"
         />
       </Head>
 
@@ -135,16 +124,10 @@ export default function Home() {
               >
                 Why Choose Us
               </ScrollLink>
-              <Link
-                href={"/ourTeam"}
-                className="hover:text-blue-500"
-              >
+              <Link href={"/ourTeam"} className="hover:text-blue-500">
                 Our Team
               </Link>
-              <Link
-                href={"/Testimonials"}
-                className="hover:text-blue-500"
-              >
+              <Link href={"/Testimonials"} className="hover:text-blue-500">
                 Testimonials
               </Link>
             </div>
@@ -367,36 +350,8 @@ export default function Home() {
         </Element>
 
         <Element name="WhyChooseUs">
-          {/* <main className="md:flex text-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0"> */}
-          <WhyChooseUs/>
-           {/* <Image
-              src={"/logo/review.jpg"}
-              width={10000}
-              height={10000}
-              className=" md:w-1/3 rounded-md"
-              alt="image"
-            />
-            <div className="flex flex-col gap-y-5 md:w-1/2">
-              <h1 className="text-lg md:text-2xl ">
-                &quot;We&apos;ve been working with CLoud Tech for over 2 years
-                and they&apos;ve been amazing to work with. They&apos;ve helped
-                us grow our business and we couldn&apos;t be happier with the
-                results. &quot;
-              </h1>
-              <div className="flex items-center gap-x-1">
-                <IconStarFilled className="text-4xl text-yellow-500" />
-                <IconStarFilled className="text-4xl text-yellow-500" />
-                <IconStarFilled className="text-4xl text-yellow-500" />
-                <IconStarFilled className="text-4xl text-yellow-500" />
-                <IconStarFilled className="text-4xl text-yellow-500" />
-              </div>
-
-              <span className="text-xl font-medium">
-                Jordan, Brisson <br />
-                CEO, Atlas Massage
-              </span>
-            </div> */}
-          {/* </main> */}
+          <WhyChooseUs />
+        
         </Element>
 
         <Element name="guarentees">
