@@ -19,11 +19,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center space-x-3">
             <span className="text-2xl">&#x2709;</span> {/* Email icon */}
-            <p className="text-lg">rabihasanshaikh3@gmail.com</p>
-          </div>
-          <div className="flex items-center space-x-3">
-            <span className="text-2xl">&#x2709;</span> {/* Email icon */}
-            <p className="text-lg">fazeelkarachi01@gmail.com</p>
+            <Link href={'/contact'} className="text-lg">nexacloud.co@gmail.com</Link >
           </div>
         </div>
   
@@ -31,7 +27,7 @@ const Footer = () => {
         <div className="space-y-4 md:max-w-md">
           <h2 className="text-xl font-semibold">About the company</h2>
           <p className="text-gray-400">
-          Cloud Tech is a leading software house specializing in innovative cloud solutions and modern application development. Our mission is to empower businesses with scalable, efficient, and state-of-the-art technology.
+          Nexa CLoud is a leading software house specializing in innovative cloud solutions and modern application development. Our mission is to empower businesses with scalable, efficient, and state-of-the-art technology.
           </p>
           <div className="flex space-x-4">
             <Link href="https://facebook.com">

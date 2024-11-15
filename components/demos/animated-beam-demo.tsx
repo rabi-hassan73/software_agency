@@ -75,15 +75,8 @@ export function AnimatedBeamMultipleOutputDemo({
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-16 bg-white">
             <h2 className="text-sm text-amber-900">
-              Cloud Tech
+              Nexa Cloud
             </h2>
-          {/* <Image
-          src={'/logo/Cloud-Tech.png'}
-          height={1000}
-          width={1000}
-          alt="logo"
-          className="w-44"
-          /> */}
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
