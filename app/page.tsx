@@ -66,6 +66,7 @@ export default function Home() {
   return (
     <div>
       <Head>
+<<<<<<< HEAD
         <title>NexaCloud | Home</title>
         <meta
           name="description"
@@ -74,6 +75,16 @@ export default function Home() {
         <meta
           name="keywords"
           content="web development, scalable websites, software development, mobile applications, graphic design, cloud services, DevOps, CI/CD"
+=======
+        <title>CloudTech | Home</title>
+        <meta 
+          name="description" 
+          content="Welcome to nexacloud, your design & development studio. We specialize in creating modern applications and providing cloud services." 
+        />
+        <meta 
+          name="keywords" 
+          content="web design, SEO, cloud services, microservices, modern applications, nexacloud, nextcloud" 
+>>>>>>> 6948ee84158d5ef353ff61bedf6e923be641f636
         />
       </Head>
 
