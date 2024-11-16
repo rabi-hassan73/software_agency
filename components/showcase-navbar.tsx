@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,7 +49,18 @@ const ShowcaseNavbar = () => {
         <Link href="/showcase" className="hover:text-blue-500">
           Showcase
         </Link>
-        
+        <Link href="/" className="hover:text-blue-500">
+          Services
+        </Link>
+        <Link href="/" className="hover:text-blue-500">
+          Process
+        </Link>
+        <Link href="/" className="hover:text-blue-500">
+          Guarantees
+        </Link>
+        <Link href="/" className="hover:text-blue-500">
+          Why Choose Us
+        </Link>
         <Link href="/ourTeam" className="hover:text-blue-500">
           Our Team
         </Link>
