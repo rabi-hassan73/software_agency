@@ -19,7 +19,6 @@ const ShowcaseNavbar = () => {
         p-6
         rounded-[6px]
         top-5
-        
         md:mx-auto
         z-50
         xl:w-5/6 
@@ -30,6 +29,7 @@ const ShowcaseNavbar = () => {
         justify-between
         shadow-md
         px-4
+        py-3
         mx-6
       "
     >
